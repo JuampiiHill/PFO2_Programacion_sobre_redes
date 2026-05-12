@@ -13,7 +13,7 @@ Proyecto académico, API desarrollado con Flask que permite registrar usuarios, 
 ## Estructura del proyecto
 
 - server.py - API Flask (endpoints)
-- db.py - conexcion y operacion con SQLite
+- db.py - conexion y operacion con SQLite
 - cliente.py - cliente de prueba
 
 ## Instalación y ejecución
@@ -46,3 +46,25 @@ El usuario debe tener todos los campos completos para registrarse
 EL username debe ser único
 
 ## Proyecto realizado como parte de la PFO 2 - Sistema de Gestión de Tareas con API y Base de datos
+
+## Capturas de pantallas
+
+### Servidor funcionando
+    screenshots/server.png
+
+### Cliente
+    screenshots/cliente.png
+
+### Navegador web
+    screenshots/navegador.png
+
+## Respuestas conceptuales
+
+### ¿Por qué hashear contraseñas?
+
+Las contraseñas se hashean para evitar almacenarlas en texto plano. 
+De esta forma si la base de datos es comprometida las contraseñas reales de los usuarios no quedan expuestas
+
+### Ventajas de usar SQLite
+
+No requiere instalar un servidor adicional y es ideal para estos tipos de proyectos. Además es liviana y facil de integrar con Python.

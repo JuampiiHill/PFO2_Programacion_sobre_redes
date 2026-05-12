@@ -19,6 +19,6 @@ print(response.text)
 response = requests.post(url_in, json=data)
 print(response.text)
 
-response = requests.post(url_task, json=data)
+response = requests.get(url_task, json=data)
 print(response.text)
     
